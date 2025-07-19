@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>	Contact us	</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="Contact.css" rel="stylesheet">
+		<script>
+			function dark_mode() {
+                const body = document.querySelector(".bod");
+
+                // toggle between classes
+                body.classList.toggle("dark");
+            }
+
+            function Menu() {
+                // does it for all the .nav-links 
+                document.querySelectorAll(".nav-links").forEach(link => {
+                link.classList.toggle('show');
+                });
+            }
+
+
+            function toggleFAQ(element) {
+                const item = element.parentElement;
+                item.classList.toggle("open");
+            }
+
+		</script>
+	
+	</head>
+		<body class = "bod">
+        <div class = "nav">
+                <a  href = "home.html" ><img class = "mage" src = "pictures/Uniqlo-Logo.jpeg" alt = "Uniqlo-Logo"></a>
+                <button class = "Mobile_menu" onclick = "Menu()">☰</button>
+                <a class = "nav-links " href = "catalog.html">Shop</a>
+                <a class = "nav-links" href = "about_us.html">about us</a>
+                <a class = "nav-links active" href = "contact_us.html">contact us </a>
+                <a class = "nav-links" href = "order.html"><img src = "pictures/shopping_cart_3.jpg" alt = "shopping_cart" class = "mage"></a>
+                <button class = "nav-links" type = "button" onclick = "dark_mode()"><img class = "mage" src="pictures/sun.jpg" alt = "sun"></button>
+        </div>
+		
+
+			<div class="Bomba">
+				<div class="Plswork" >
+					<td><a href="#ContactInfo";>Contact Info</a></td>
+					<td><a href="#LOCO">Location Of Stores</a></td>
+					<td><a href="#Opinion">Feedback Form</a></td>
+					<td><a href="#Generalqn">FAQ Accordian</a></td>
+					<td><a href="#Fun">Creators</a></td>
+				</div>
+			</div>
+
+			<hr>
+
+			<h1 class="BOB">Contact Us - Help Needed?
+			</h1>
+			<br>
+			<hr>
+
+
+		<div class="conbact" id="ContactInfo">
+			<h2 class="tile">Contact Information</h2>
+			<br>
+			<p class="tile2"><span class="con">Company's Name:</span>	Uniqlo Co., Ltd</p>
+			<p class="tile2"><span class="con">Contact Number:</span>	78123642</p>
+			<p class="tile2"><span class="con">UNIQLO's Email:</span>	customerservice.sg@uniqlo.com.sg</p>
+            <br>
+
+            <div class="nstab">
+                <a href="https://www.instagram.com/uniqlosg/" >
+                <img src="pictures/insta.jpg" alt="Uniqlo's Instagram" width="30em" class="con" >
+                </a>
+            
+            </div>
+
+	    </div>
+
+	<hr>
+	    <div class="mapper Brayden">
+            <h2 class="tile">UNIQLO Stores in Singapore</h2>
+            <div class="map-container" id="LOCO">
+            <iframe class="mapstore"
+            src="https://www.google.com/maps/d/embed?mid=12sNo0ngC92z5h_FCELpNG2UDrA3aGFA&ehbc=2E312F&noprof=1" allowfullscreen>
+            </iframe>    
+        </div>
+
+    <hr>
+                    <h2  id="Opinion">Feedback Form</h2>
+                    <div class="feed">
+                        <div class="gap"></div>
+                        <h3>How is your experience so far?
+                            Tell us about it!!!
+                        </h3>
+                        
+
+                        <div class="divider"></div>
+
+                        <p>
+                            Click this link to go to the page where u can give your feedback!!
+                            <br>
+                            <a href="Feedback Form.html" class="link-button">Go to Feedback Page</a>
+                        </p>
+                        
+                        <div class="gap"></div>
+                    </div>
+
+<br>
+<br>
+<hr>
+<div class="Accord">
+
+    <div class="faq-container" id="Generalqn">
+    <div class="faq-title">FAQ Accodian</div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">Store</div>
+        <div class="faq-answer">
+        <details>
+            <summary class="faq-box"> Events</summary>
+            <div class="fall">
+                <p>No events current hehe :)</p>
+            </div>
+        </details>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">Return and Exchange</div>
+            <div class="faq-answer">
+                <details>
+                    <summary class="faq-box"> Return Policy</summary>
+                        <div class="fall" >
+                            1. We accept exchange or return within 30 days from the date you received the order.
+                            <br>
+                            2. Original receipt must be presented for exchange or return.
+                            <br>
+                            3. Original product is required. Exchanged or returned product(s) must be in its new and original condition, original product packaging attached with its original price tags and labels.
+                            <br>
+                            4. Innerwear and packaged items cannot be exchanged or returned due to our strict hygiene policy.
+                            <br>
+                            5. Product(s) can be changed to available sizes only if the product is not used. Color of products are not able to change.
+                            <br>
+                            6. Product(s) purchased outside of Singapore is not eligible for exchange or return.
+                            <br>
+                            7. Product(s) sold at discounted price are not allowed to be exchanged.
+                            <br>
+                            8. We can reject any requst to return, exhange and refund of any item.
+                        </div>
+                </details>
+
+                <details>
+                    <summary class="faq-box">How to Return</summary>
+
+                    <details>
+
+                        <summary class="faq-box2">👉 How to return Online</summary>
+
+                            <div class="fall">
+                                <ol>
+                                    <li>Review Checklist
+                                        <ul class="List2">
+                                            <li>Order is made within 30 Days</li>
+                                            <li>Items still have their tags and label</li>
+                                            <li>Items have not been washed or stained</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                            Fill in item information(Such as item number, quantity and etc.)
+                                    </li>
+                                    <br>
+                                    <li>Packing and Return
+                                        <ul class="List2">
+                                            <li>
+                                            Pack the item in the box with the <span style="font-weight: bold;">Return Form(Invoice)</span>. 
+                                            You may reuse the original delivery box
+                                            </li>
+                                        </ul>
+
+                                        <li> Call and Inform
+                                            <ul class="List2">
+                                                <li>
+                                                Give us a call and we will tell u the closes place to return and nicely packaged product.
+                                                </li>
+                                            </ul>
+                                        </li>    
+                                    </li>
+                                </ol>
+                            </div>
+                    </details>
+
+    <details>
+    <summary class="faq-box2">👉 How to return Physical Store</summary>
+            <div class="fall">
+            <ol>
+                <li>
+                <ul class="List2">
+                    <li>Order is made within 30 Days</li>
+                    <li>Items still have their tags and label</li>
+                    <li>Items have not been washed or stained</li>
+                </ul>
+                </li>
+
+                <li> Come to the Physical store
+                <ul class="List2">
+                    <li>
+                    Remember that it has to be the original store that you've bought it from, otherwise we can't refund you the item.
+                    </li>
+                </ul>
+                </li>
+            </ol>
+            </div>
+    </details>      
+    </details>
+
+        <details>
+        <summary class="faq-box">Receipt and Invoice</summary>
+            <details>
+            <summary class="faq-box2">👉 Can Purchase Receipt replace receipts?</summary>
+            <div class="fall">
+            <ol>
+                <li>
+                No... you are required to have the original printed receipt or online purchase invoice.
+                </li>
+            </ol>
+            </div>
+            </details>
+
+            <details>
+            <summary class="faq-box2">👉 What if i lost my receipt or invoice?</summary>
+                <div class="fall">
+                <ol>
+                <li>
+                    LMAOOO!!! umm too bad ig. We can't help you
+                </li>
+                </ol>
+                </div>
+            </details>
+        </details>
+        </div>
+    </div>
+
+
+    </div>
+</div>
+<br>
+<hr>
+<h2 class="tile">Creater intro</h2>
+<div class="pics" id="Fun">
+  <div class="bangercontainment">
+    <div class="gap"></div>
+    <div class="img-box"><img src="pictures/Yanen.jpg" alt="Yan en's logo"></div>
+    <div class="divider"></div>
+    <div class="name-box">
+      <p >Yan en</p>
+        
+      <p >Number: <span class="Jing2">82073272</span></p>
+        
+      <p >Email: <span class="Jing2">Yanen@gmail.com</span></p>
+        
+      <p >Motivational Quote: <span class="Jing2">"screaming at my computer screen"</span>   </p> 
+    </div>
+    <div class="gap"></div>
+
+   
+
+    <div class="gap"></div>
+      <div class="name-box">
+      <p >Brayden</p>
+        
+      <p >Number: <span class="Jing2">87815670</span></p>
+        
+      <p >Email: <span class="Jing2">Pokedotit@gmail.com</span></p>
+        
+      <p >Motivational Quote: <span class="Jing2">"When life hits u hard. Hit someone harder"</span>   </p> 
+    </div>
+     <div class="divider"></div>
+    <div class="img-box"><img src="pictures/Bray.jpg" alt="Brayden's logo"></div>
+    <div class="gap"></div>
+
+   
+
+    <div class="gap"></div>
+    <div class="img-box"><img src="pictures/Chlo.jpg" alt="Chloe's logo"></div>
+     <div class="divider"></div>
+      <div class="name-box">
+      <p >Chloe</p>
+        
+      <p >Number: <span class="Jing2">88208164</span></p>
+        
+      <p >Email: <span class="Jing2">chlo3liim@gmail.com</span></p>
+        
+      <p >Motivational Quote: <span class="Jing2">"i want to sleep"</span>   </p> 
+    </div>
+    <div class="gap"></div>
+
+   
+
+    <div class="gap"></div>
+    <div class="name-box">
+      <p >Jing Ren</p>
+        
+      <p >Number: <span class="Jing2">88208166</span></p>
+        
+      <p >Email: <span class="Jing2">leejingren2705@gmail.com</span></p>
+        
+      <p >Motivational Quote: <span class="Jing2">"i like Boys"</span>   </p> 
+    </div>
+     <div class="divider"></div>
+    <div class="img-box"><img src="pictures/Ren.jpg" alt="Jing Ren's logo"></div>
+    <div class="gap"></div>
+  </div>
+</div>
+</body>
+
+</html>

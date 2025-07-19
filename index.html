@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <link href="Contact.css" rel="stylesheet">
+  <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+			function Menu() {
+				// does it for all the .nav-links 
+				document.querySelectorAll(".nav-links").forEach(link => {
+				link.classList.toggle('show');
+				});
+			}
+			function dark_mode() {
+    const body = document.querySelector(".bod");
+
+    // toggle between classes
+    body.classList.toggle("dark");
+}
+		</script>
+		
+
+</head>
+  <body class = "light bod">
+        <div class = "nav">
+                <a  href = "home.html" ><img class = "mage" src = "pictures/Uniqlo-Logo.jpeg" alt = "Uniqlo-Logo"></a>
+                <button class = "Mobile_menu" onclick = "Menu()">☰</button>
+                <a class = "nav-links " href = "catalog.html">Shop</a>
+                <a class = "nav-links" href = "about_us.html">about us</a>
+                <a class = "nav-links active" href = "contact_us.html">contact us </a>
+                <a class = "nav-links" href = "order.html" class = "icon"><img src = "pictures/shopping_cart_3.jpg" alt = "shopping_cart" class = "mage"></a>
+                <button class = "nav-links" type = "button" onclick = "dark_mode()"><img class = "mage" src="pictures/sun.jpg" alt = "sun"></button>
+        </div>
+  
+
+    <h2 style="text-align: center;" id="Opinion">Feedback Form</h2>
+
+                    <form action="https://formsubmit.co/braydenlee543@gmail.com" method="POST" enctype="text/plain" class="Feedback">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="Email" required placeholder="Example: Benryhelen1@gmail.com">
+                    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name3" name="FullName" required placeholder="Example: Benry Helen">
+
+                    <label for="type">Type of Issue:</label>
+                        <select id="type" name="Issue Type" required>
+                            <option hidden></option>
+                            <option value="Product availability">Product availability</option>
+                            <option value="Checkout experience">Checkout experience</option>
+                            <option value="Product Discovery & Info">Product Discovery & Info</option>
+                            <option value="Ordering & Checkout">Ordering & Checkout</option>
+                            <option value=" Shipping & Delivery"> Shipping & Delivery</option>
+                            <option value="Returns & Refunds">Returns & Refunds</option>
+                            <option value="Customer Service">Customer Service</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                    <label for="message">Describe the problem:</label>
+                    <textarea id="message" name="Message" rows="6" required></textarea>
+
+                    <button type="submit" class="FBS2">Send Feedback</button>
+                    </form>
+</body>
+</html>
+
+
